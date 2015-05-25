@@ -1,0 +1,26 @@
+{
+  "name": "ShoeRunner",
+  "version": "1.0.0",
+  "description": "Keep track of your shoe's miles",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solthoth/ShoeRunner.git"
+  },
+  "author": "Carlos C Barajas Jr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solthoth/ShoeRunner/issues"
+  },
+  "homepage": "https://github.com/solthoth/ShoeRunner",
+  "dependencies": {
+    "dotenv": "^1.1.0",
+    "express": "^4.12.4",
+    "jade": "^1.9.2",
+    "mongodb": "^2.0.33",
+    "mongoose": "^4.0.3"
+  }
+}
