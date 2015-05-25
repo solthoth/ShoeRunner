@@ -25,3 +25,5 @@ app.get('/', function (req, res){
 var server = app.listen(process.env.APP_PORT, function(){
   console.log('listening on port %s', process.env.APP_PORT);
 });
+
+module.exports = app;

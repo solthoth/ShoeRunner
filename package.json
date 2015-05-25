@@ -4,7 +4,7 @@
   "description": "Keep track of your shoe's miles",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./tests/test_routes.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,9 @@
     "jade": "^1.9.2",
     "mongodb": "^2.0.33",
     "mongoose": "^4.0.3"
+  },
+  "devDependencies": {
+    "supertest": "^1.0.1",
+    "mocha": "^2.2.5"
   }
 }
