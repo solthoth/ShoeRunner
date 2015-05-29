@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./bin/www",
-    "test": "mocha ./tests/*.js"
+    "test": "mocha -r jscoverage ./tests/**.js"
   },
   "repository": {
     "type": "git",
@@ -32,7 +32,8 @@
     "serve-favicon": "~2.2.1"
   },
   "devDependencies": {
-    "supertest": "^1.0.1",
-    "mocha": "^2.2.5"
+    "jscoverage": "^0.5.9",
+    "mocha": "^2.2.5",
+    "supertest": "^1.0.1"
   }
 }
