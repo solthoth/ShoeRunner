@@ -1,0 +1,13 @@
+extends layout
+
+block header
+  script(type="text/javascript").
+    $(document).ready(function(){ 
+      $('a[href="/about"]').parent().addClass('active'); 
+    });
+block content
+  include menu
+  div(class="row marketing")
+    div(class="col-lg-6")
+      h1 About
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et sollicitudin massa. Donec porta nulla quam. Vivamus vel molestie turpis, maximus tristique sapien. Vivamus id aliquet odio. Aliquam ac consequat sem. Ut lorem mi, ornare eu felis vitae, lacinia lobortis elit. Aliquam diam leo, semper in semper quis, sagittis quis urna. Vestibulum quis libero euismod, tempus nisl a, porta est. Sed volutpat vehicula quam, nec tincidunt lacus sagittis et. Fusce id nunc nec quam volutpat dapibus ac id nisl. Nulla id dolor a lectus tempor laoreet tempor vel lectus. Aliquam commodo sapien nec odio tempus ultricies. Aliquam blandit erat sit amet mi molestie aliquet. Quisque blandit, magna id lacinia fringilla, lacus dolor imperdiet tortor, at tempus enim massa et dolor.

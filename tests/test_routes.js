@@ -10,3 +10,23 @@ describe('GET /', function(){
     });
   });
 });
+
+describe('GET /login', function(){
+  it('should return /login', function(done){
+    request(app).get('/login')
+    .end(function(error, response){
+      if (error) return done(error);
+      done();
+    });
+  });
+});
+
+describe('GET /about', function(){
+  it('should return /about', function(done){
+    request(app).get('/about')
+    .end(function(error, response){
+      if (error) return done(error);
+      done();
+    });
+  });
+});

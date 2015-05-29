@@ -1,5 +1,23 @@
 extends layout
 
+block header
+  script(type="text/javascript").
+    $(document).ready(function(){ 
+      $('a[href="/"]').parent().addClass('active'); 
+    });
 block content
-  h1= title
-  p Welcome to #{title}
+  include menu
+  div.jumbotron 
+    h1 Welcome
+      p(class="lead") Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      p(class="btn btn-lg btn-success" href="/login" role="button") Sign up today
+  div(class="row marketing")
+    div(class="col-lg-6")
+      h4 Subheading
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et sollicitudin massa. Donec porta nulla quam. Vivamus vel molestie turpis, maximus tristique sapien. Vivamus id aliquet odio. Aliquam ac consequat sem. Ut lorem mi, ornare eu felis vitae, lacinia lobortis elit. Aliquam diam leo, semper in semper quis, sagittis quis urna. Vestibulum quis libero euismod, tempus nisl a, porta est. Sed volutpat vehicula quam, nec tincidunt lacus sagittis et. Fusce id nunc nec quam volutpat dapibus ac id nisl. Nulla id dolor a lectus tempor laoreet tempor vel lectus. Aliquam commodo sapien nec odio tempus ultricies. Aliquam blandit erat sit amet mi molestie aliquet. Quisque blandit, magna id lacinia fringilla, lacus dolor imperdiet tortor, at tempus enim massa et dolor.
+      p Aenean varius suscipit velit, nec accumsan turpis elementum quis. Nulla nisi ligula, dapibus nec sem ac, imperdiet laoreet nisi. Duis ut elementum arcu. Nam volutpat consectetur sem eu iaculis. Aliquam dapibus, sapien id efficitur sollicitudin, quam velit egestas enim, sit amet molestie ex nulla et dolor. Morbi euismod justo sed suscipit vulputate. Suspendisse ac sagittis magna.
+      h4 Subheading
+      p Praesent id dignissim diam, in aliquet quam. Phasellus varius odio sit amet justo tincidunt tincidunt quis et tortor. Ut iaculis elementum vulputate. Nulla euismod, velit a tincidunt hendrerit, sapien metus porta diam, elementum congue neque enim eu ante. Morbi sodales magna in nulla bibendum, ut pellentesque magna dignissim. Ut scelerisque vel mi et tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+      h4 Subheading
+      p Quisque blandit diam sed odio aliquam facilisis in quis ipsum. Nullam nulla enim, consectetur non lobortis at, feugiat in leo. Nam ac erat euismod eros feugiat feugiat. Pellentesque eu vehicula enim. Suspendisse nisl arcu, auctor quis egestas eget, mollis vitae mauris. Sed faucibus elit ligula, quis rhoncus nunc ultricies in. Integer mattis odio a tellus aliquam varius. Nulla finibus magna eget nisl porttitor, vitae fermentum ante euismod. Integer sollicitudin nisl ut fringilla pulvinar.
+      p Sed ornare, velit non tempor imperdiet, augue libero imperdiet lectus, nec tincidunt felis lectus vitae justo. Vivamus in pharetra velit, vitae porttitor urna. Ut malesuada tristique augue. Praesent vel sodales eros. Suspendisse sed ligula ligula. Morbi laoreet imperdiet vulputate. Pellentesque ultrices maximus consequat. Integer nec mi dui.

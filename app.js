@@ -26,6 +26,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/api', apiRoutes);
+if(app.get('env') === 'development') {
+  console.log('development mode');
+  app.locals.pretty = true;
+} else {
+  console.log('production mode');
+  app.locals.pretty = false;
+}
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
