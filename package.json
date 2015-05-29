@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./bin/www",
-    "test": "mocha -r jscoverage ./tests/**.js"
+    "test": "mocha -r jscoverage ./tests/**.js",
   },
   "repository": {
     "type": "git",
