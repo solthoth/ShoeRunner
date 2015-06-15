@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./bin/www",
-    "test": "mocha -r jscoverage ./tests/**.js",
-    "send-coverage": "./node_modules/.bin/mocha tests -R mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js"
+    "test": "mocha -r jscoverage",
+    "send-coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -31,10 +31,11 @@
     "serve-favicon": "^2.2.1"
   },
   "devDependencies": {
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.15",
     "jscoverage": "^0.5.9",
     "mocha": "^2.2.5",
-    "supertest": "^1.0.1",
-    "coveralls": "^2.11.2",
-    "mocha-lcov-reporter": "0.0.2"
+    "mocha-lcov-reporter": "0.0.2",
+    "supertest": "^1.0.1"
   }
 }
